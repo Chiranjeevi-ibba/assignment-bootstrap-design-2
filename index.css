@@ -91,6 +91,7 @@ body {
 
 .dynamic-tabs-list {
     height: 50px;
+    background-color: rgb(20, 32, 46, 0.8);
 }
 .dynamic-tabs {
     font-family: Poppins-light;
@@ -310,6 +311,10 @@ body {
 }
 .top-arrow {
     transform: rotate(-90deg);
+    cursor: pointer;
+}
+.top-arrow:hover {
+    text-decoration: none;
 }
 .facebook-icon:hover {
     text-decoration: none;
