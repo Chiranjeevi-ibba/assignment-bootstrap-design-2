@@ -26,6 +26,22 @@ body {
     width: 100%;
 }
 
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid #F1AC4D;
+    color: #ffffff;
+}
+.nav-tabs{
+    border-bottom: none;
+}
+.nav-tabs .nav-link{
+    border: none;
+}
+.nav-link:hover {
+    border: none;
+}
+
 .nav-logo-text {
     font-family: Roboto-regular;
 }
@@ -38,7 +54,56 @@ body {
 .nav-list-items:hover {
     color: orange;
 }
-.menu-cont {
+
+.main-cont {
+    width: 60px;
+    height: 60px;
+}
+.main-cont .menu {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 23px;
+    position: relative;
+    transition: .3s all ease-in;
+}
+.main-cont:hover .menu {
+    width: 35px;
+    background-color: orange;
+}
+.main-cont .menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background-color: #fff;
+    height: 2px;
+    width: 35px;
+    transition: .3s all ease-in;
+}
+.main-cont:hover .menu::before {
+    width:25px;
+    background-color: orange;
+
+}
+.main-cont .menu::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: #fff;
+    height: 2px;
+    width: 35px;
+    transition: .3s all ease-in;
+}
+.main-cont:hover .menu::after {
+    width:25px;
+    background-color: orange;
+
+}
+
+
+/* .menu-cont {
     position: relative;
     padding-left: 12px;
 }
@@ -51,9 +116,7 @@ body {
     background-color:#fff;
     position: absolute;
 } 
-/* .menu-cont:hover .menu {
-    width: 35px;
-} */
+
 .menu::before {
     content: "";
     position: absolute;
@@ -64,10 +127,7 @@ body {
     background-color: #fff;
     transition: .2s linear;
 }
-/* .menu:hover::before {
-    width: 25px;
-    height: 100%;
-} */
+
 
 .menu::after {
     content: "";
@@ -78,10 +138,8 @@ body {
     width: 30px;
     background-color: #fff;
     transition: .2s linear;
-}
-/* .menu:hover::after {
-    width: 25px;
 } */
+
 
 .search-icon::before {
     content: "\e907";
