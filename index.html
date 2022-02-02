@@ -11,6 +11,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./icomoon/style.css">
+    <style>
+        .nav-tabs .nav-link.active {
+            background-color: transparent;
+            border: 0px;
+            border-bottom: 2px solid #F1AC4D;
+            color: #ffffff;
+        }
+        .nav-tabs{
+            border-bottom: none;
+        }
+        .nav-tabs .nav-link{
+            border: none;
+        }
+        .nav-link:hover {
+            border: 0px;
+        }
+    </style>
 </head>
 <body>
     <header class="sticky-top">
@@ -18,7 +35,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg ">
                     <div class="d-flex flex-row justify-content-center align-items-center">
-                     <img class="logo-image pr-2" src="./Resources/logo.png" alt="Logo">
+                     <img class="logo-image pr-2" src="./Resources/Logo.png" alt="Logo">
                      <h4 class="nav-logo-text text-white">INFOSYS PRIZE</h4>
                     </div>
                      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -43,8 +60,8 @@
             </div>
         </section>
         <section class="dynamic-tabs-container">
-            <div class="container">
-                <ul class="nav dynamic-tabs-list">
+            <div class="container-fluid-padding">
+                <ul class="nav nav-tabs dynamic-tabs-list">
                     <li class="nav-item">
                       <a class="nav-link nav-list-items dynamic-tabs lectures " data-toggle="tab" href="#lectures">Lectures</a>
                     </li>
@@ -58,7 +75,7 @@
             </div>
         </section>
     </header>
-    <main>
+    <main id="main">
         <div class="tab-content">
             <div id="lectures" class="container-fluid-padding  tab-pane active">
                 <div class="row no-gutters">
@@ -431,7 +448,8 @@
                         </div>
                     </div>
                     <div class="col-lg-1 d-flex justify-content-end align-items-end">
-                        <a class="text-white top-arrow"></a>
+                        <!-- <a href="#header" class="text-white top-arrow"></a> -->
+                        <a href="#main" class="top-arrow"></a>
                     </div>
                 </div>
             </div>
